@@ -1,0 +1,19 @@
+# Requirements for Potential Failures Test Data Generator
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Database connectivity
+pyodbc>=4.0.35
+
+# Spark (typically pre-installed in Fabric/Databricks)
+pyspark>=3.3.0
+
+# Optional: For enhanced data manipulation
+python-dateutil>=2.8.2
+
+# Note: In Microsoft Fabric or Databricks environments, 
+# most of these packages are pre-installed.
+# You may only need to install pyodbc if connecting to SQL Server directly.
