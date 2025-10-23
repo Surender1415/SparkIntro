@@ -1,0 +1,21 @@
+# Requirements for Potential Failures Test Data Generator (Python Application)
+# Install with: pip install -r requirements_python.txt
+
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Date handling
+python-dateutil>=2.8.2
+
+# Optional: For better performance with parquet files
+pyarrow>=10.0.0
+fastparquet>=2023.0.0
+
+# Optional: For progress bars
+tqdm>=4.65.0
+
+# Development dependencies (optional)
+# pytest>=7.4.0
+# black>=23.0.0
+# mypy>=1.5.0

@@ -1,27 +1,69 @@
 # Potential Failures Test Data Generator
 
-A comprehensive, scalable Python notebook for generating test data for the `app_potential_failures` schema.
+## 🎯 Choose Your Version
 
-## 🚀 Quick Start
+You have **TWO complete implementations** - choose based on your environment:
 
-1. Open `generate_potential_failures_test_data.ipynb`
-2. Configure `CONFIG['TOTAL_RECORDS'] = 1000` (start small)
-3. Run all cells
-4. Validate output in Lakehouse
+### 🟦 Jupyter Notebook Version (Fabric/Databricks)
+**Best for**: Microsoft Fabric, Databricks, Spark environments with database access
 
-**That's it! You now have test data ready for testing.**
+👉 **Start here:** Open `generate_potential_failures_test_data.ipynb`  
+📖 **Documentation:** `QUICK_REFERENCE.md` → `IMPLEMENTATION_GUIDE.md`
+
+### 🟩 Python Application (VS Code/Local)
+**Best for**: Local development, VS Code, no Spark/database required
+
+👉 **Start here:** `QUICKSTART_PYTHON.md`  
+💻 **Run:** `python main.py --scenario dev`
+
+---
+
+## ⚡ Super Quick Start
+
+### Jupyter Notebook Version (5 minutes)
+```python
+# 1. Open: generate_potential_failures_test_data.ipynb
+# 2. Cell 2: CONFIG['TOTAL_RECORDS'] = 1000
+# 3. Run all cells
+# ✓ Data in Lakehouse!
+```
+
+### Python Application Version (3 minutes)
+```bash
+# 1. Install
+pip install -r requirements_python.txt
+
+# 2. Generate
+python main.py --scenario dev
+
+# 3. Check output
+ls -lh output/
+# ✓ Data in ./output/
+```
 
 ## 📦 What's Included
 
+### 🟦 Jupyter Notebook Version
 | File | Description |
 |------|-------------|
-| **generate_potential_failures_test_data.ipynb** | Main notebook with all generation logic |
-| **TEST_DATA_GENERATOR_README.md** | Comprehensive features and usage guide |
-| **IMPLEMENTATION_GUIDE.md** | Step-by-step setup and implementation |
-| **CONFIGURATION_EXAMPLES.md** | 15 pre-built configuration scenarios |
-| **PROJECT_SUMMARY.md** | Complete project overview and deliverables |
-| **quick_config.py** | CLI tool for quick configuration generation |
-| **requirements.txt** | Python dependencies |
+| `generate_potential_failures_test_data.ipynb` | Main notebook (850+ lines) |
+| `TEST_DATA_GENERATOR_README.md` | Features guide |
+| `IMPLEMENTATION_GUIDE.md` | Setup guide |
+| `CONFIGURATION_EXAMPLES.md` | 15 scenarios |
+| `QUICK_REFERENCE.md` | Cheat sheet |
+| `quick_config.py` | CLI config tool |
+
+### 🟩 Python Application Version
+| File | Description |
+|------|-------------|
+| `main.py` | CLI entry point |
+| `data_generator.py` | Core logic (600+ lines) |
+| `config.py` | Configuration |
+| `examples.py` | 10 working examples |
+| `PYTHON_APP_README.md` | Complete guide |
+| `QUICKSTART_PYTHON.md` | Quick start |
+
+**Total: 20 files, ~6,000 lines of code + documentation**
 
 ## ✨ Key Features
 
@@ -160,15 +202,27 @@ python quick_config.py --scenario realistic --output my_config.py
 
 ## 🎓 Getting Started
 
-### For Beginners
-1. Read: [Quick Start (5 min)](IMPLEMENTATION_GUIDE.md#quick-start-5-minutes)
-2. Use: Pre-built scenarios from [Configuration Examples](CONFIGURATION_EXAMPLES.md)
-3. Start: With 1,000 records
+### Jupyter Notebook Version
+**For Beginners:**
+1. Read: `QUICK_REFERENCE.md` (3 min)
+2. Open: `generate_potential_failures_test_data.ipynb`
+3. Run: With 1,000 records
 
-### For Advanced Users
-1. Customize: Configuration parameters
-2. Create: Custom scenarios
-3. Integrate: With testing pipelines
+**For Advanced:**
+1. Read: `IMPLEMENTATION_GUIDE.md`
+2. Customize: Configuration parameters
+3. Integrate: With Fabric/Databricks pipelines
+
+### Python Application Version
+**For Beginners:**
+1. Read: `QUICKSTART_PYTHON.md` (3 min)
+2. Run: `python main.py --scenario dev`
+3. Check: `./output/` directory
+
+**For Advanced:**
+1. Read: `PYTHON_APP_README.md`
+2. Run: `python examples.py`
+3. Integrate: Import as module
 
 ## 💡 Tips
 
@@ -192,4 +246,35 @@ You now have a production-ready test data generator that:
 
 ---
 
-**Need help?** Check the [Implementation Guide](IMPLEMENTATION_GUIDE.md) or [Project Summary](PROJECT_SUMMARY.md)
+---
+
+## 📚 Complete Documentation
+
+**See:** `README_COMPLETE.md` for comprehensive guide to both versions
+
+**Jupyter Notebook:**
+- Quick: `QUICK_REFERENCE.md`
+- Setup: `IMPLEMENTATION_GUIDE.md`
+- Examples: `CONFIGURATION_EXAMPLES.md`
+- Complete: `TEST_DATA_GENERATOR_README.md`
+
+**Python Application:**
+- Quick: `QUICKSTART_PYTHON.md`
+- Examples: `python examples.py`
+- Complete: `PYTHON_APP_README.md`
+
+---
+
+## 🏆 Both Versions Include
+
+✅ All 29 schema columns  
+✅ 10 sample KPI codes  
+✅ 20 sample stations  
+✅ Duration variety  
+✅ FY spanning tasks  
+✅ Period crossing  
+✅ Duplicate testing  
+✅ 1k-50k+ records  
+✅ 100% requirements met  
+
+**Choose the version that fits your environment and start generating! 🚀**
